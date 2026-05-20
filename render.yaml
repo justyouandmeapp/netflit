@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: netflit
+    env: node
+    region: ohio
+    buildCommand: cd client && npm install && npm run build
+    startCommand: cd server && npm install && node index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
