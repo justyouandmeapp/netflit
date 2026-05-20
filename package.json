@@ -1,0 +1,12 @@
+{
+  "name": "netflit",
+  "version": "1.0.0",
+  "description": "Netflit - Netflix clone with TMDB",
+  "scripts": {
+    "install:all": "cd server && npm install && cd ../client && npm install",
+    "build": "cd client && npm run build",
+    "start": "cd server && node index.js",
+    "dev:server": "cd server && node --watch index.js",
+    "dev:client": "cd client && npx vite --host 0.0.0.0"
+  }
+}
